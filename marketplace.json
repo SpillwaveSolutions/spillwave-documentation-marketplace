@@ -1,0 +1,38 @@
+{
+  "name": "spillwave-documentation",
+  "owner": {
+    "name": "Spillwave Solutions",
+    "url": "https://github.com/SpillwaveSolutions"
+  },
+  "metadata": {
+    "description": "Professional software documentation skills: specialist, Mermaid, PlantUML, Google style, STE100.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "document-specialist",
+      "source": "https://github.com/SpillwaveSolutions/document-specialist-skill",
+      "description": "Software documentation specialist. STE100 default. Mermaid-first diagrams. PlantUML wireframes."
+    },
+    {
+      "name": "design-doc-mermaid",
+      "source": "https://github.com/SpillwaveSolutions/design-doc-mermaid",
+      "description": "Default diagrams for design docs, walkthroughs, and requirements (C4, sequence, class, ER, state)."
+    },
+    {
+      "name": "plantuml",
+      "source": "https://github.com/SpillwaveSolutions/plantuml",
+      "description": "Leftover UML (wireframes, use case, timing, ArchiMate) plus image export. Wiki never renders PlantUML source."
+    },
+    {
+      "name": "google-docs-style",
+      "source": "https://github.com/SpillwaveSolutions/google-docs-style",
+      "description": "Google developer docs style. Exclusive with STE100."
+    },
+    {
+      "name": "ste100",
+      "source": "https://github.com/SpillwaveSolutions/ste100-agent-plugins",
+      "description": "Local ASD-STE100 gate. Default voice pack for document-specialist."
+    }
+  ]
+}
