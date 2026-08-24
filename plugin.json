@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spillwave-documentation-marketplace",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unified multi-platform marketplace plugin bundling document-specialist, Mermaid, PlantUML, Google Docs style, and STE 100 skills. Mermaid-first diagrams. PlantUML for wireframes and leftover UML. Supports Claude Code, Codex, Grok Build, Cursor, and universal plugin standard.",
   "author": {
     "name": "Rick Hightower",
