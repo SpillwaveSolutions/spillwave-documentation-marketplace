@@ -2,6 +2,8 @@
 
 Focused multi-host marketplace for **professional software documentation skills**.
 
+Claude Code reads [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json). Plugin sources are GitHub objects, not raw URLs.
+
 Bundles five complementary plugins:
 
 | Plugin | Repo | What it does |
