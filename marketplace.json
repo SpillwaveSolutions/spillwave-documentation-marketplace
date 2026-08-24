@@ -12,17 +12,17 @@
     {
       "name": "document-specialist",
       "source": "https://github.com/SpillwaveSolutions/document-specialist-skill",
-      "description": "Software documentation specialist. Default voice is STE100."
+      "description": "Software documentation specialist. STE100 default. Mermaid-first diagrams. PlantUML wireframes."
     },
     {
       "name": "design-doc-mermaid",
       "source": "https://github.com/SpillwaveSolutions/design-doc-mermaid",
-      "description": "GitHub-safe Mermaid diagrams for design docs and walkthroughs."
+      "description": "Default diagrams for design docs, walkthroughs, and requirements (C4, sequence, class, ER, state)."
     },
     {
       "name": "plantuml",
       "source": "https://github.com/SpillwaveSolutions/plantuml",
-      "description": "PlantUML generation and image export for UML-depth diagrams."
+      "description": "Leftover UML (wireframes, use case, timing, ArchiMate) plus image export. Wiki never renders PlantUML source."
     },
     {
       "name": "google-docs-style",
