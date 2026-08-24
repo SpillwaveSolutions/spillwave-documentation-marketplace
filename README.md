@@ -49,6 +49,28 @@ Codex and Cursor consume the host-specific plugin manifests shipped by each sour
 
 Together they form a complete documentation workstation for agents.
 
+## Style default
+
+`document-specialist` writes prose in **STE100** unless the user names Google
+style. The two voice packs are exclusive. Do not mix them.
+
+Hard bans in both packs:
+
+- No em dash (`—`) and no `--` used as an em dash.
+- Do not start a sentence with **So**, **That**, **Thus**, or **Hence**.
+
+## WikiTicket SDD wiring
+
+When [wiki_ticket_sdd](https://github.com/SpillwaveSolutions/wiki_ticket_sdd)
+creates an architecture doc or a code walkthrough, it must invoke:
+
+1. `document-specialist` for prose
+2. `design-doc-mermaid` for GitHub-safe diagrams
+3. `plantuml` for class / ER / state / component images
+
+GitHub wiki renders Mermaid. It does not render PlantUML source. Keep PlantUML
+as `.puml` plus a PNG or SVG link.
+
 ## Related
 
 - [skills-marketplace](https://github.com/SpillwaveSolutions/skills-marketplace) — broader skill catalog

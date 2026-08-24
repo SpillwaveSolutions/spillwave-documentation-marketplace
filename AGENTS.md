@@ -13,3 +13,12 @@ It bundles five documentation-related agent skills/plugins:
 Multi-host support: Claude Code, Grok Build, Codex, Cursor, Agent Plugins 1.0.
 
 See README.md and marketplace.json for install and plugin details.
+
+## Style and wiring
+
+- Default voice for document-specialist: STE100.
+- Alternate voice: google-docs-style, only when the user names it.
+- Never mix the two packs.
+- No em dash. No sentence starting with So, That, Thus, or Hence.
+- WikiTicket architecture docs and code walkthroughs must call
+  document-specialist + design-doc-mermaid + plantuml.
