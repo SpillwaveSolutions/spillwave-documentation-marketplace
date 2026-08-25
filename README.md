@@ -42,6 +42,26 @@ skilz install SpillwaveSolutions/ste100-agent-plugins
 
 Codex and Cursor consume the host-specific plugin manifests shipped by each source repo.
 
+## Stale directory marketplace
+
+Add this marketplace from **GitHub**, not from a local directory, unless you are developing it. A directory source has no cache. If the folder moves, every plugin it served becomes unresolvable and every Stop hook fails each turn:
+
+```
+Stop hook error: Failed to run: Plugin directory does not exist:
+.../spillwave-documentation-marketplace/google-docs-style
+(google-docs-style@spillwave-documentation — run /plugin to reinstall)
+```
+
+`/plugin to reinstall` cannot fix a missing directory source. Recover with:
+
+```bash
+claude plugin marketplace remove spillwave-documentation
+claude plugin marketplace add SpillwaveSolutions/spillwave-documentation-marketplace
+claude plugin install google-docs-style@spillwave-documentation
+```
+
+See [issue #3](https://github.com/SpillwaveSolutions/spillwave-documentation-marketplace/issues/3).
+
 ## Why this suite
 
 - **document-specialist** owns the full lifecycle of software docs, including wireframes.
