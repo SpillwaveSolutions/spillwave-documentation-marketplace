@@ -4,13 +4,14 @@ Focused multi-host marketplace for **professional software documentation skills*
 
 Claude Code reads [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json). Plugin sources are GitHub objects, not raw URLs.
 
-Bundles five complementary plugins:
+Bundles six complementary plugins:
 
 | Plugin | Repo | What it does |
 |--------|------|--------------|
 | `document-specialist` | [document-specialist-skill](https://github.com/SpillwaveSolutions/document-specialist-skill) | Greenfield templates (SRS, PRD, OpenAPI, user manuals, runbooks) + brownfield reverse-engineering from Spring Boot / FastAPI. Progressive Disclosure Architecture. Markdown / DOCX / PDF. Mermaid-first diagrams, PlantUML wireframes. |
 | `design-doc-mermaid` | [design-doc-mermaid](https://github.com/SpillwaveSolutions/design-doc-mermaid) | Default diagrams for design docs (C4, sequence, flowchart, class, ER, state). Extract, render, embed. |
 | `plantuml` | [plantuml](https://github.com/SpillwaveSolutions/plantuml) | Leftover UML (use case, timing, ArchiMate), Salt wireframes, and image export. GitHub wiki never renders PlantUML source. |
+| `imagen-diagrams` | [imagen-diagrams](https://github.com/SpillwaveSolutions/imagen-diagrams) | Illustration renderer. Turns Mermaid and PlantUML into themed PNG/SVG for slides, articles, and Confluence. Not the diagram author. |
 | `google-docs-style` | [google-docs-style](https://github.com/SpillwaveSolutions/google-docs-style) | Google developer documentation style guide + formatter + hooks. |
 | `ste100` | [ste100-agent-plugins](https://github.com/SpillwaveSolutions/ste100-agent-plugins) | ASD-STE100 Simplified Technical English gate with local TypeScript orchestrator / editor / adversary loop. No external API calls. |
 
@@ -26,6 +27,7 @@ This is a specialized catalog. Broader domain skills live in [`skills-marketplac
 /plugin install document-specialist@spillwave-documentation
 /plugin install design-doc-mermaid@spillwave-documentation
 /plugin install plantuml@spillwave-documentation
+/plugin install imagen-diagrams@spillwave-documentation
 /plugin install google-docs-style@spillwave-documentation
 /plugin install ste100@spillwave-documentation
 ```
@@ -36,6 +38,7 @@ Or install individual repos with Skilz:
 skilz install SpillwaveSolutions/document-specialist-skill
 skilz install SpillwaveSolutions/design-doc-mermaid
 skilz install SpillwaveSolutions/plantuml
+skilz install SpillwaveSolutions/imagen-diagrams
 skilz install SpillwaveSolutions/google-docs-style
 skilz install SpillwaveSolutions/ste100-agent-plugins
 ```
@@ -67,6 +70,7 @@ See [issue #3](https://github.com/SpillwaveSolutions/spillwave-documentation-mar
 - **document-specialist** owns the full lifecycle of software docs, including wireframes.
 - **design-doc-mermaid** is the default diagram tool on GitHub wiki.
 - **plantuml** covers wireframes and UML types Mermaid cannot do easily, always as images.
+- **imagen-diagrams** turns Mermaid and leftover PlantUML into themed slide and article figures.
 - **google-docs-style** enforces clear, consistent developer writing.
 - **ste100** adds controlled Simplified Technical English for procedures, runbooks, and regulated content.
 
@@ -90,6 +94,7 @@ creates an architecture doc, a code walkthrough, or a requirements doc, it must 
 1. `document-specialist` for prose (and wireframes)
 2. `design-doc-mermaid` for GitHub-safe diagrams, including class, ER, state, and component views
 3. `plantuml` only for leftover types (use case, timing, ArchiMate, Salt wireframes)
+4. `imagen-diagrams` when the published artifact is a themed PNG or SVG (slides, articles, Confluence)
 
 **GitHub wiki:** Mermaid stays in a fenced block. PlantUML is a PNG or SVG that
 you commit and upload with the wiki page.
